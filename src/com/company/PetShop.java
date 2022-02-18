@@ -35,6 +35,7 @@ public class PetShop {
         String nameToSee = "XXXX";
 
 
+
         System.out.println("We have the following animals available: ");
         System.out.println(dog1.getName()+" is a "+dog1.getAge()+" month old dog, that costs $"+dog1.getCost());
         System.out.println(dog2.getName()+" is a "+dog2.getAge()+" month old dog, that costs $"+dog2.getCost());
