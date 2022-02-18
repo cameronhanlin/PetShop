@@ -21,7 +21,7 @@ public class Dog {
 
     //get name
     public String getName(){
-        return this.name;
+        return name;
     }
 
     //set age
@@ -31,7 +31,7 @@ public class Dog {
 
     //get age
     public int getAge(){
-        return this.age;
+        return age;
     }
 
     //set cost
@@ -41,7 +41,7 @@ public class Dog {
 
     //get cost
     public double getCost(){
-        return this.cost;
+        return cost;
     }
 
 

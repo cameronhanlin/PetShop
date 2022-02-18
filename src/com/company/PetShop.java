@@ -46,7 +46,7 @@ public class PetShop {
 
 
         //adjust the input
-        nameToSee = nameToSee.replaceAll("[^a-zA-Z ]", "");
+        nameToSee = nameToSee.replaceAll("[^a-zA-Z]", "");
         nameToSee = nameToSee.toLowerCase();
         nameToSee = nameToSee.substring(0,1).toUpperCase()+nameToSee.substring(1);
 
