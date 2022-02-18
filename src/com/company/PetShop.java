@@ -27,32 +27,12 @@ public class PetShop {
 
         Scanner scan = new Scanner(System.in);
 
-        Dog dog1 = new Dog();
-        Dog dog2 = new Dog();
-        Cat cat1 = new Cat();
-        Cat cat2 = new Cat();
+        Dog dog1 = new Dog("Fido", 3, 70.0);
+        Dog dog2 = new Dog("Tucker", 2, 100.0);
+        Cat cat1 = new Cat("Mittens", 12, 1.0);
+        Cat cat2 = new Cat("Fluffy", 5, 2.0);
 
         String nameToSee = "XXXX";
-
-        //dog1
-        dog1.setName("Fido");
-        dog1.setAge(3);
-        dog1.setCost(70.0);
-
-        //dog2
-        dog2.setName("Tucker");
-        dog2.setAge(2);
-        dog2.setCost(100.0);
-
-        //cat1
-        cat1.setName("Mittens");
-        cat1.setAge(12);
-        cat1.setCost(1.0);
-
-        //cat2
-        cat2.setName("Fluffy");
-        cat2.setAge(5);
-        cat2.setCost(2.0);
 
 
         System.out.println("We have the following animals available: ");
@@ -61,7 +41,10 @@ public class PetShop {
         System.out.println(cat1.getName()+" is a "+cat1.getAge()+" month old cat, that costs $"+cat1.getCost());
         System.out.println(cat2.getName()+" is a "+cat2.getAge()+" month old cat, that costs $"+cat2.getCost());
         System.out.print("What name of pet would you like to see? ");
-        nameToSee = scan.next();
+        nameToSee = scan.nextLine();
+
+        nameToSee = nameToSee.toLowerCase();
+        nameToSee = nameToSee.substring(0,1).toUpperCase()+nameToSee.substring(1);
 
         for(int i=1;i<3;i++){
             System.out.println("\b");

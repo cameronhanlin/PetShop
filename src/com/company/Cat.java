@@ -7,34 +7,41 @@ public class Cat {
     private double cost;
 
 
+    public Cat(String name, int age, double cost){
+        this.name = name;
+        this.age = age;
+        this.cost = cost;
+    }
+
+
     //set name
-    public void setName(String newName){
-        name = newName;
+    public void setName(String name){
+        this.name = name;
     }
 
     //get name
     public String getName(){
-        return name;
+        return this.name;
     }
 
     //set age
-    public void setAge(int newAge){
-        age = newAge;
+    public void setAge(int age){
+        this.age = age;
     }
 
     //get age
     public int getAge(){
-        return age;
+        return this.age;
     }
 
     //set cost
-    public void setCost(double newCost){
-        cost = newCost;
+    public void setCost(double cost){
+        this.cost = cost;
     }
 
     //get cost
     public double getCost(){
-        return cost;
+        return this.cost;
     }
 
 }
