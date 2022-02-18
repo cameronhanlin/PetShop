@@ -44,8 +44,14 @@ public class PetShop {
         System.out.print("What name of pet would you like to see? ");
         nameToSee = scan.nextLine();
 
+
+        //adjust the input
+        nameToSee = nameToSee.replaceAll("[^a-zA-Z ]", "");
         nameToSee = nameToSee.toLowerCase();
         nameToSee = nameToSee.substring(0,1).toUpperCase()+nameToSee.substring(1);
+
+
+
 
         for(int i=1;i<3;i++){
             System.out.println("\b");
